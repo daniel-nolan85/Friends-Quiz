@@ -1,0 +1,139 @@
+:root {
+    --main-text: 'Source Sans Pro', sans-serif;
+}
+#main {
+    background: url(images/friends.jpg) center/cover no-repeat;
+    min-height: 100vh;
+}
+.back {
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
+    color: #fff;
+    font-size: 3rem;
+}
+#start {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    border-radius: 10px;
+    background: crimson;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);  
+}
+.container, .results-container {
+    width: 40vw;
+    border: 2px solid black;
+    background: white;
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+header {
+    position: relative;
+    top: -10px;
+    margin: 0;
+    padding: 0;
+}
+.q-num, #final {
+    text-transform: capitalize;
+    font-family: 'Rock Salt', cursive;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+button #start, button #retake {
+    text-decoration: none;
+}
+.question, #final, #result {
+    padding-bottom: 15px;
+    margin: 0;
+    font-weight: bold;
+}
+p, label, .next, .go, .radio, #results, #retake {
+    font-family: var(--main-text);
+    font-size: 1.25rem;
+    line-height: 28px;
+}
+.button {
+    text-align: center;
+    margin: 5px;
+}
+.go, #results, #retake {
+    background: crimson;
+    color: #fff;
+    outline: none;
+    margin: 7px;
+}
+.go:hover,
+#results:hover,
+#retake:hover {
+    background: #b80015;
+    cursor: pointer;
+}
+.image, #final, #result, #retake {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    #start {
+        top: 5%;
+        left: 40%;
+        font-size: .5rem;
+    }
+    #main {
+        background: url(images/friends.jpg) center/cover no-repeat;
+        min-height: 50vh;
+        position: relative;
+        top: 10rem;
+    }
+    .back {
+        top: 2.5rem;
+        left: 2rem;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .container, .results-container {
+        width: 65vw;
+    }
+    .q-num {
+        font-size: 1.5rem;
+    }
+    p, label, .next, .go, .radio, #results, #retake {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .image {
+        width: 65vw;
+    }
+    #result img{
+        width: 65vw
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .container, .results-container {
+        width: 70vw;
+    }
+    p, label, .next, .go, .radio, #results, #retake {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .back {
+        top: 2.5rem;
+        left: 2rem;
+    }
+}
